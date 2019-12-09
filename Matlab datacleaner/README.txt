@@ -1,0 +1,1 @@
+Raw data extraction was done using NYSE TAQ database giving large .mat files, that was cleaned using Matlab.
