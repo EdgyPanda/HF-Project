@@ -4,7 +4,7 @@ We estimate the Stock-Bond correlation using high frequency data and apply it to
 
 ## Code
 
-The folder "Matlab datacleaner" contains a Matlab script capable of cleaning raw NYSE TAQ data using [Barndorff-nielsen et al (2009)] (https://onlinelibrary.wiley.com/doi/10.1111/j.1368-423X.2008.00275.x) outputted as a .csv file.  
+The folder "Matlab datacleaner" contains a Matlab script capable of cleaning raw NYSE TAQ data using [Barndorff-nielsen et al (2009)](https://onlinelibrary.wiley.com/doi/10.1111/j.1368-423X.2008.00275.x) outputted as a .csv file.  
 
 The dataCleanFunc.R contains functions neccesary to clean the .csv file outputted from the Matlab script in the same repository. It converts the .csv file into .xts objects with correctly specified timestamps. 
 
