@@ -130,7 +130,7 @@ P2Q = size(locate, 1);
 %WE WILL USE DATA FROM THE THREE HIGHEST EXCHANGES (NOT BASED ON VOLUME
 % BUT ON NUMBER OF TRADES EXECUTED)
 
-%Changed to choose trades from NYSE and NASDAQ per Kims recommendation. 
+%Changed to choose trades from NYSE and NASDAQ, but can be changed back. 
 
 NYSE = sum(count(data(1:end,5), "N"));
 Boston = sum(count(data(1:end,5), "B"));
@@ -237,7 +237,7 @@ quoteData(  outlier_spreadindex, :) = [];
 
 
 %-------------------------------Q4---------------------------------------
-%NOT IMPLEMENTED. HOPEFULLY IT DOESN'T REALLY MATTER.
+%NOT IMPLEMENTED. 
 %-------------------------------T1----------------------------------------
 iii = 1:size(data,1);
 %FINDING INDIXES WHERE CORR IS NOT EQUAL TO ZERO:
