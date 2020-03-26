@@ -6,17 +6,24 @@ them using forecast comparison analysis which include the Superior Predictive
 Ability (SPA) of [Hansen (2005)](http://www-siepr.stanford.edu/workp/swp05003.pdf) and the Equal Predictive 
 Ability (EPA) testing approach of [Diebold \& Mariano 
 (1995)](https://amstat.tandfonline.com/doi/abs/10.1080/07350015.1995.10524599) and [West (1996)](https://www.jstor.org/stable/2171956?seq=1#metadata_info_tab_contents). 
+
 We find the best estimator which have the lowest empirical loss under the 
 "literature-preferred" proxy (a Realized Covariance sampled on a five minute 
-frequency, RCov_{5min}) utilizing 
+frequency, <img src="images/rcov5min.svg" height="13" />) utilizing 
 [Patton (2011)](https://www.sciencedirect.com/science/article/pii/S0304407610002551) data-based ranking method in conjunction with the best results obtained from the comparison analyses. This estimator is then used in a bivariate Risk-Targeted Equally-weighted Risk Contribution (RTERC) portfolio containing 
-ETF's for U.S. stocks and bonds where it is compared to a benchmark portfolio. The conclusion is threefold. First, our results determine that no estimator could vastly outperform the Threshold Realized Covariance on a one minute sampling scheme (ThreshCov_{1min}) 
+ETF's for U.S. stocks and bonds where it is compared to a benchmark portfolio. The conclusion is threefold. 
+
+First, our results determine that no estimator could vastly outperform the Threshold Realized Covariance on a one minute sampling scheme (<img src="images/threshcov1min.svg" height="13"/>) 
 as noted from the main analysis together with the average empirical loss. Furthermore we find little evidence that any of the estimators significantly outperform the 
-"literature-preferred"  RCov_{5min}, with the exception of ThreshCov_{1min} 
-and ThreshCov_{5min} together with the Modulated Realized Covariance on a one second sampling scheme (that is, MRC_{1sec}). Second, we observe that non noise-robust estimators sampled at minute frequencies seems to provide much of the benefits of high frequency data without exposing the estimators to microstructure noise, and the empirical accuracy only slightly increases (on average) when considering noise-robust estimators on second frequencies. Finally, we find evidence that constructing the RTERC portfolio 
-using the best performing realized measure, ThreshCov_{1min} (high frequency 
+"literature-preferred"  <img src="images/rcov5min.svg" height="13"/>, with the exception of <img src="images/threshcov1min.svg" height="13"/>
+and <img src="images/threshcov5min.svg" height="13"/> together with the Modulated Realized Covariance on a one second sampling scheme (that is, <img src="images/MRC1sec.svg" height="13"/>). 
+
+Second, we observe that non noise-robust estimators sampled at minute frequencies seems to provide much of the benefits of high frequency data without exposing the estimators to microstructure noise, and the empirical accuracy only slightly increases (on average) when considering noise-robust estimators on second frequencies. 
+
+Finally, we find evidence that constructing the RTERC portfolio 
+using the best performing realized measure, <img src="images/threshcov1min.svg" height="13"/> (high frequency 
 portfolio) yields better overall results in contrast to the "industry standard" 
-being a portfolio constructed from a daily covariance estimator, RCov_{daily} 
+being a portfolio constructed from a daily covariance estimator, <img src="images/rcovdaily.svg" height="13"/> 
 (benchmark portfolio). The high frequency portfolio reduces the vol of vol and 
 is closer to the risk-target while also reducing the likelihood of very 
 negative returns. In conclusion the high frequency portfolio is much more 
